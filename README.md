@@ -1,5 +1,7 @@
 # Study Machine Learning Survival  
 
+Work still in progress...
+
 ## **Introduction**  
 
 This study was developed by the **Núcleo de Sistemas Eletrônicos Embarcados (NSEE)** at **Instituto Mauá de Tecnologia**, in collaboration with **Fundação Oncocentro de São Paulo (FOSP)**, **Faculdade de Saúde Pública da USP (Universidade de São Paulo)**, and **A.C. Camargo Cancer Center**.  
