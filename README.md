@@ -93,7 +93,8 @@ For any questions or support, feel free to reach out via email:
 - Simone Aldrey Angelo - Instituto Mauá de Tecnologia  
 - Yasmin Pacheco Gil Bonilha - Instituto Mauá de Tecnologia  
 - Adeylson Ribeiro - Fundação Oncocentro de São Paulo (FOSP)  
-- Fernando Maia - Faculdade de Saúde Pública da Universidade de São Paulo  
+- Fernando Maia - Faculdade de Saúde Pública da Universidade de São Paulo
+- Nanci Utida - Faculdade de Saúde Pública da Universidade de São Paulo
 - Maria Paula Curado - A.C. Camargo Cancer Center  
 - Gisele Fernandes - A.C. Camargo Cancer Center  
 - Victor Wünsch Filho - Fundação Oncocentro de São Paulo e Faculdade de Saúde Pública da Universidade de São Paulo  
