@@ -6,7 +6,7 @@ Work still in progress...
 
 This study was developed by the **Núcleo de Sistemas Eletrônicos Embarcados (NSEE)** at **Instituto Mauá de Tecnologia**, in collaboration with **Fundação Oncocentro de São Paulo (FOSP)**, **Faculdade de Saúde Pública da USP (Universidade de São Paulo)**, and **A.C. Camargo Cancer Center**.  
 
-The objective is to explore the application of **machine learning algorithms for survival analysis** to predict cancer patient survival and identify the most impactful variables in these predictions. The study includes data from patients diagnosed with **cervical, colorectal, lung, prostate, and breast cancer** between **2000 and 2024**.  
+The objective is to explore the application of **machine learning algorithms for survival analysis** to predict cancer patient survival and identify the most impactful variables in these predictions. The study includes data from patients diagnosed with **cervical, colorectal, lung, prostate, or breast cancer** between **2000 and 2024**.  
 
 The dataset used in this research is **open-source** and is called **Registro Hospitalar de Câncer (RHC-SP)**, available on the [FOSP website](https://fosp.saude.sp.gov.br/fosp/diretoria-adjunta-de-informacao-e-epidemiologia/rhc-registro-hospitalar-de-cancer/banco-de-dados-do-rhc/).  
 
