@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, KFold
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler, MinMaxScaler, MaxAbsScaler, QuantileTransformer
 from sklearn.metrics import roc_curve, roc_auc_score, auc, ConfusionMatrixDisplay, classification_report, confusion_matrix
 from sklearn.inspection import permutation_importance
-from sksurv.metrics import concordance_index_censored, concordance_index_ipcw, brier_score
+from sksurv.metrics import concordance_index_censored, concordance_index_ipcw, brier_score, integrated_brier_score
 
 import xgboost as xgb
 
@@ -325,7 +325,6 @@ def c_index_ipcw_brier_score(model, X_train, y_train, X_test, y_test):
     print(f'C-Index IPCW Test: {c_index_ipcw[0]}')
     print(f'C-Index IPCW Train: {c_index_ipcw_train[0]}')
 
-
     # Model Evaluation: Brier Score and IBS
     # Predict survival curves for the test set
     surv_curves = model.predict_survival_function(X_test, return_array=True)
@@ -336,7 +335,7 @@ def c_index_ipcw_brier_score(model, X_train, y_train, X_test, y_test):
 
     # Calculate the Integrated Brier Score (IBS)
     time_differences = np.diff(np.hstack([[0], time_points]))
-    ibs = np.sum(brier_scores[1] * time_differences) / time_points[-1]
+    ibs = integrated_brier_score(y_train, y_test, surv_curves[:, :-1], time_points)
     print(f'\nIntegrated Brier Score (IBS): {ibs}')
 
     # Print Brier Score at specific time points (1, 3, and 5 years)
