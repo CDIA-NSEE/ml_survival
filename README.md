@@ -1,12 +1,12 @@
-# Study Machine Learning Survival  
-
-Work still in progress...
+# Machine Learning Survival Study
 
 ## **Introduction**  
 
 This study was developed by the **Núcleo de Sistemas Eletrônicos Embarcados (NSEE)** at **Instituto Mauá de Tecnologia**, in collaboration with **Fundação Oncocentro de São Paulo (FOSP)**, **Faculdade de Saúde Pública da USP (Universidade de São Paulo)**, and **A.C. Camargo Cancer Center**.  
 
-The objective is to explore the application of **machine learning algorithms for survival analysis** to predict cancer patient survival and identify the most impactful variables in these predictions. The study includes data from patients diagnosed with **cervical, colorectal, lung, prostate, or breast cancer** between **2000 and 2024**.  
+The objective is to explore the application of **machine learning algorithms for survival analysis** to predict cancer patient survival and identify the most impactful variables in these predictions. The study includes data from patients diagnosed with **cervical, colorectal, lung, prostate, or breast cancer** between **2000 and 2024**. 
+
+## **Dataset**
 
 The dataset used in this research is **open-source** and is called **Registro Hospitalar de Câncer (RHC-SP)**, available on the [FOSP website](https://fosp.saude.sp.gov.br/fosp/diretoria-adjunta-de-informacao-e-epidemiologia/rhc-registro-hospitalar-de-cancer/banco-de-dados-do-rhc/).  
 
@@ -41,7 +41,7 @@ python -m venv venv
 #### Linux  
 
 ```bash
-virtualenv -p python3.10 venv
+virtualenv -p python3.12 venv
 ```  
 
 ### **Activating the Virtual Environment**  
@@ -62,7 +62,8 @@ source venv/bin/activate
 
 ```bash
 pip install -e .
-pip install -r requirements.txt
+pip install -r requirements/data_analysis.txt -r requirements/ml.txt
+
 ```  
 
 ---
@@ -90,8 +91,8 @@ For any questions or support, feel free to reach out via email:
 
 - [Lucas Buk Cardoso](https://www.linkedin.com/in/lucasbukcardoso/) - Instituto Mauá de Tecnologia  
 - Vanderlei Cunha Parro - Instituto Mauá de Tecnologia  
-- Simone Aldrey Angelo - Instituto Mauá de Tecnologia  
-- Yasmin Pacheco Gil Bonilha - Instituto Mauá de Tecnologia  
+- [Simone Aldrey Angelo](https://www.linkedin.com/in/simoneangelo/) - Instituto Mauá de Tecnologia  
+- [Yasmin Pacheco Gil Bonilha](https://www.linkedin.com/in/yasminbonilha/) - Instituto Mauá de Tecnologia  
 - Adeylson Ribeiro - Fundação Oncocentro de São Paulo (FOSP)  
 - Fernando Maia - Faculdade de Saúde Pública da Universidade de São Paulo
 - Nanci Utida - Faculdade de Saúde Pública da Universidade de São Paulo
