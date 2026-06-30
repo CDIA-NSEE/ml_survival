@@ -30,6 +30,33 @@ To run the notebooks in this repository, follow these steps:
 
 ## **Setting Up the Project Locally**  
 
+This notebook was originally developed for Google Colab and uses `!gdown` commands to download the required files. To run it locally:
+
+1. Remove or comment out all cells containing `!gdown`.
+2. Download the original dataset (`.dbf`) directly from the [FOSP website](https://fosp.saude.sp.gov.br/fosp/diretoria-adjunta-de-informacao-e-epidemiologia/rhc-registro-hospitalar-de-cancer/cadastro/).
+3. Convert the `.dbf` file to `.csv` using the code below.
+4. Update the file paths in the notebook to point to the generated `.csv` file.
+
+#### Converting the dataset from `.dbf` to `.csv`
+
+```python
+from dbfread import DBF
+import pandas as pd
+
+# Read the DBF file
+table = DBF("path/to/dataset.dbf", encoding="latin-1")
+
+# Convert to DataFrame
+df = pd.DataFrame(iter(table))
+
+# Save as CSV
+df.to_csv("dataset.csv", index=False, encoding="utf-8")
+```
+**Note**: Install the required package before running the conversion:
+``` python
+pip install dbfread
+```
+
 ### **Creating the Virtual Environment (venv)**  
 
 #### Windows  
